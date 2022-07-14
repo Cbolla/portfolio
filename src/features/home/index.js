@@ -43,6 +43,10 @@ export const HomePage = () => {
                         </Carousel>
                     </div>
                 </div> 
+                <div className="links">
+                    <a target="_blank" href="https://github.com/cbolla"><img src={GitHub} alt="Icone do GitHub" /></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/williamfa/"><img src={LinkedIn} alt="Icone do LinkedIn"/></a>
+                </div>
             </div>
         </div>
 
