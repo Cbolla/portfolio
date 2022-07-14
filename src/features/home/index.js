@@ -68,13 +68,13 @@ export const HomePage = () => {
             <h1>Habilidades</h1>
             <div className="tools">
                 <div className="react">
-                    <CardsSkill img={ReactIcon} text="React JS é uma biblioteca JavaScript para a criação de interfaces de usuário — ou UI (user interface)."/>
+                    <CardsSkill img={ReactIcon} text="React JS: 5 meses de experiência"/>
                 </div>
                 <div className="css">
-                    <CardsSkill img={CssIcon} text="CSS é chamado de linguagem Cascading Style Sheet e é usado para estilizar elementos escritos em uma linguagem de marcação como HTML."/>
+                    <CardsSkill img={CssIcon} text="CSS: 12 meses de experiência"/>
                 </div>
                 <div className="js">
-                    <CardsSkill img={JsIcon} text="O JS ou JavaScript é uma linguagem de programação de alto-nível, criada no meio da década de 90, mais precisamente em 1996 pelo lendário programador Brendan Eich que, além de criar o JavaScript, foi também um dos fundadores da Mozilla Corporation."/>
+                    <CardsSkill img={JsIcon} text="JavaScript: 5 meses de experiência"/>
                 </div>
             </div>
         </div>

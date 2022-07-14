@@ -93,7 +93,6 @@ header .title {
     width: 200px;
     cursor:pointer;
     padding: 20px;
-    
 }
 
 .section1 .section-right{
@@ -148,7 +147,11 @@ header .title {
 
 
 @media (max-width: 518px){
+    header a{
+        display: none;
+    }
     .section1{
+        width: 60%;
         flex-direction: column;
         margin-bottom: 250px;
         justify-content: center;
@@ -163,8 +166,19 @@ header .title {
         
     }
     .section1 .section-left .circle .div-carousel{
-        width: 300px;
+        width: 100%;
         height: 200px;
+    }
+
+    .section1 .section-right{
+        width: 100vw;
+        margin: auto;
+        
+    }
+
+    .section1 .section-right .container-info{
+        flex-direction: column;
+        
     }
 }
 
@@ -214,7 +228,7 @@ header .title {
 
 
 .section3{
-    height: 100vh;
+    height: 130vh;
     display: flex;
     flex-direction: column;
     align-items: center;
