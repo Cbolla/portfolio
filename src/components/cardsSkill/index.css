@@ -1,0 +1,31 @@
+.card-skill{
+    background-color: #214bb498;
+    margin-bottom: 50px;
+    height: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100px;
+}
+
+.card-skill p{
+    color: white;
+    display: flex;
+    margin-left: 20px;
+    opacity: 0;
+}
+
+.card-skill img{
+    margin-left: 10px;
+}
+
+.card-skill:hover {
+    width: 90%;
+    transition-duration: 0.5s;
+}
+
+.card-skill:hover p{
+   display: flex;
+   transition-duration: 1s;
+   opacity: 100;
+}
