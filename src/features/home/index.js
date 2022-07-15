@@ -37,7 +37,11 @@ export const HomePage = () => {
             <div className="section-left">
                 <div className="circle">
                     <div className="div-carousel">
-                        <Carousel className="carousel" cellSpacing="100" animation='zoom' autoplay autoplayInterval="2000">
+                        <Carousel className="carousel" wrapAround cellSpacing="100" animation='zoom' autoplay autoplayInterval="3000" renderCenterLeftControls={({previousSlide}) => (<button className="anterior" onClick={previousSlide}>Anterior</button>)}
+                        renderCenterRightControls={({ nextSlide }) => (
+                        <button className="proximo" onClick={nextSlide}>Próximo</button>
+                          )}>
+                            
                             <a target="_blank" href="https://github.com/cbolla"><img src={GitHub} alt="Icone do GitHub" /></a>
                             <a target="_blank" href="https://www.linkedin.com/in/williamfa/"><img src={LinkedIn} alt="Icone do LinkedIn"/></a>
                         </Carousel>
