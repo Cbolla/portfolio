@@ -3,7 +3,7 @@
     margin-bottom: 50px;
     height: 100px;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     width: 100px;
 }

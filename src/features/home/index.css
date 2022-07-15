@@ -44,22 +44,101 @@ header{
 header a{
     text-decoration: none;
     color: white;
+    margin-left: 60px;
 }
+
 
 header .sections-header{
     display: flex;
     font-weight: bold;
 }
 
-header .sections-header a{
-    margin-left: 100px;
-    cursor: pointer;
-}
-
 header .title {
     font-size: 25px;
     font-weight: bold;
 }
+
+#checkbox-menu{
+    display: none;
+    position: absolute;
+}
+
+label{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+    display: none;
+}
+
+
+label span{
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #ffffff;
+    transition: 0.25 ease-in-out;
+}
+
+label span:nth-child(1){
+    top: 0;
+}
+label span:nth-child(2){
+    top: 8px;
+}
+label span:nth-child(3){
+    top: 16px;
+}
+
+#checkbox-menu:checked + label span:nth-child(1){
+    transition: 0.25s;
+    transform: rotate(-45deg);
+    top: 8px;
+}
+#checkbox-menu:checked + label span:nth-child(2){
+    opacity: 0;
+}
+#checkbox-menu:checked + label span:nth-child(3){
+    transition: 0.25s;
+    transform: rotate(45deg);
+    top: 8px;
+}
+    
+.menu-style{
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 1; 
+}
+
+.menu-tools{
+    border-radius: 20px;
+    width: 150px;
+    height: 280px;
+    background-color: #457ef0d8;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.desabilitado{
+    display: none;
+}
+.menu-tools a{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    display: flex;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:20px ;
+}
+
 
 /* Primeira tela do site */
 .section1{
@@ -89,6 +168,12 @@ header .title {
 
 .div-carousel{
     width: 300px;
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;  
 }
 
 .carousel{
@@ -221,6 +306,23 @@ header .title {
     width: 70%;
 }
 
+/* Quarta tela do site */
+
+.section4{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section4 h1{
+    color: white;
+    margin-bottom: 5%;
+}
+
 
 /* Responsividade do site */
 
@@ -249,6 +351,10 @@ header .title {
 }
 
 @media (max-width: 518px){
+
+    label{
+        display: flex;
+    }
 
     .container{
         display: flex;

@@ -9,10 +9,14 @@ import CssIcon from "../../assets/img/css-icon.svg"
 import ReactIcon from "../../assets/img/react-icon.svg"
 import Carousel from "nuka-carousel"
 import { CardsSkill } from "../../components/cardsSkill/CardsSkill"
-
+import { useState,useRef,useLayoutEffect } from "react"
 
 
 export const HomePage = () => {
+    const[active,setMode]=useState(false)
+    const ToggleMode = ()=>{
+        setMode(!active)
+    }
       return (
     <div className="container">
         <header>
@@ -21,8 +25,23 @@ export const HomePage = () => {
                 <a href="#section01">Apresentação</a>
                 <a href="#section02">Sobre mim</a>
                 <a href="#section03">Habilidades</a>
+                <a href="#section04">Projetos</a>
             </div>
+            <input type="checkbox" name="" id="checkbox-menu" />
+            <label htmlFor="checkbox-menu" id="menu" onClick={ToggleMode}>
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
         </header>
+        <div className={active ? 'menu-style' : "desabilitado"}>
+            <div className="menu-tools">
+            <a href="#section01">Apresentação</a>
+                    <a href="#section02">Sobre mim</a>
+                    <a href="#section03">Habilidades</a>
+                    <a href="#section04">Projetos</a>
+            </div>
+        </div>
         <div className="section1" id="section01">
             <div className="section-right">
                 <div className="container-info">
@@ -84,6 +103,13 @@ export const HomePage = () => {
                 <div className="js">
                     <CardsSkill img={JsIcon} text="JavaScript: 5 meses de experiência"/>
                 </div>
+            </div>
+        </div>
+
+        <div className="section4" id="section04">
+            <h1>Projetos</h1>
+            <div className="projetos-carousel ">
+                
             </div>
         </div>
     </div>
