@@ -116,6 +116,7 @@ label span:nth-child(3){
 }
 
 .menu-tools{
+    margin-top: 5px;
     border-radius: 20px;
     width: 150px;
     height: 280px;
@@ -126,7 +127,7 @@ label span:nth-child(3){
     align-items: center;
     
 }
-.desabilitado{
+.disabled{
     display: none;
 }
 .menu-tools a{

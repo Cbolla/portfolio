@@ -9,7 +9,7 @@ import CssIcon from "../../assets/img/css-icon.svg"
 import ReactIcon from "../../assets/img/react-icon.svg"
 import Carousel from "nuka-carousel"
 import { CardsSkill } from "../../components/cardsSkill/CardsSkill"
-import { useState,useRef,useLayoutEffect } from "react"
+import { useState} from "react"
 
 
 export const HomePage = () => {
@@ -34,7 +34,7 @@ export const HomePage = () => {
                 <span></span>
             </label>
         </header>
-        <div className={active ? 'menu-style' : "desabilitado"}>
+        <div className={active ? 'menu-style' : "disabled"}>
             <div className="menu-tools">
             <a href="#section01">Apresentação</a>
                     <a href="#section02">Sobre mim</a>
