@@ -336,6 +336,21 @@ label span:nth-child(3){
 
 @media (max-width: 851px){
 
+    .section1 .section-left .circle{
+        margin-top: 40px;
+        margin-left: 60%;
+        width: 0px;
+        background-color: #5e84e3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .side-left img{
+        width: 100%;
+    }
+
     .section2 .side-right{
         font-size: 20px;
         text-align: center;
@@ -351,7 +366,7 @@ label span:nth-child(3){
 
 }
 
-@media (max-width: 518px){
+@media (max-width: 622px){
 
     label{
         display: flex;
