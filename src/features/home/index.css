@@ -331,16 +331,17 @@ label span:nth-child(3){
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 }
 
 .projetos .elbus{
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 } 
 .projetos .emBreve{
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -355,12 +356,14 @@ label span:nth-child(3){
     margin: auto;
     width: 90%;
     border-radius: 20px;
-    filter:blur(3px)
+    filter:blur(3px);
+    user-select: none;
 }
 
 .projetos img:hover{
-    filter:blur(0px)
+    filter:blur(0px);
 }
+
 
 
 /* Responsividade do site */
@@ -369,6 +372,18 @@ label span:nth-child(3){
     .section2 .side-right{
         font-size: 20px;
         margin-top: 50px;
+    }
+    .section4{
+        margin-top: 500px;
+    }
+    .section4 h1{
+        margin-bottom: 100px;
+    }
+    .elbus img{
+        filter:blur(0px);
+    }
+    .emBreve img{
+        filter:blur(0px);
     }
 }
 
@@ -400,6 +415,19 @@ label span:nth-child(3){
         justify-content: center;
         margin-bottom: 200px;
         margin-left: auto;
+    }
+    .projetos{
+        
+        flex-direction: column;
+    }
+    .section4{
+        margin-top: 500px;
+    }
+    .section4 h1{
+        margin-bottom: 200px;
+    }
+    .section4 .elbus{
+        margin-bottom: 20px;
     }
 
 }
