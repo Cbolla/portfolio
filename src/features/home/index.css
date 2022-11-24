@@ -22,7 +22,7 @@ body{
     font-family: 'Roboto', sans-serif;
     position: relative;
     padding-top:70px ;
-    height: 420vh;
+    height: 600vh;
 }
 
 
@@ -316,12 +316,50 @@ label span:nth-child(3){
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 200px;
 
 }
 
 .section4 h1{
     color: white;
     margin-bottom: 5%;
+}
+
+.projetos{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projetos .elbus{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.projetos .emBreve{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.projetos a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.projetos img{
+    margin: auto;
+    width: 90%;
+    border-radius: 20px;
+    filter:blur(3px)
+}
+
+.projetos img:hover{
+    filter:blur(0px)
 }
 
 
@@ -423,3 +461,4 @@ label span:nth-child(3){
         justify-content: start;
     }
 }
+

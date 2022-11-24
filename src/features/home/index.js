@@ -2,11 +2,16 @@ import "./index.css"
 import React from 'react'
 import GitHub from "../../assets/img/gitHub.svg"
 import LinkedIn from "../../assets/img/linkedIn.svg"
-import William from "../../assets/img/william.svg"
+import William from "../../assets/img/william.png"
 import Cartoon from "../../assets/img/cartoon.svg"
 import JsIcon from "../../assets/img/js-icon.svg"
 import CssIcon from "../../assets/img/css-icon.svg"
 import ReactIcon from "../../assets/img/react-icon.svg"
+import tailwindcss from "../../assets/img/tailwindcss.png"
+import figma from "../../assets/img/figma.png"
+import elbus from "../../assets/img/elbus.png"
+import emBreve from "../../assets/img/emBreve.png"
+
 import Carousel from "nuka-carousel"
 import { CardsSkill } from "../../components/cardsSkill/CardsSkill"
 import { useState} from "react"
@@ -61,14 +66,14 @@ export const HomePage = () => {
                         <button className="proximo" onClick={nextSlide}>Próximo</button>
                           )}>
                             
-                            <a target="_blank" href="https://github.com/cbolla"><img src={GitHub} alt="Icone do GitHub" /></a>
-                            <a target="_blank" href="https://www.linkedin.com/in/williamfa/"><img src={LinkedIn} alt="Icone do LinkedIn"/></a>
+                            <a target="_blank" rel="noreferrer noopener" href="https://github.com/cbolla"><img src={GitHub} alt="Icone do GitHub" /></a>
+                            <a target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/in/williamfa/"><img src={LinkedIn} alt="Icone do LinkedIn"/></a>
                         </Carousel>
                     </div>
                 </div> 
                 <div className="links">
-                    <a target="_blank" href="https://github.com/cbolla"><img src={GitHub} alt="Icone do GitHub" /></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/williamfa/"><img src={LinkedIn} alt="Icone do LinkedIn"/></a>
+                    <a target="_blank" rel="noreferrer noopener" href="https://github.com/cbolla"><img src={GitHub} alt="Icone do GitHub" /></a>
+                    <a target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/in/williamfa/"><img src={LinkedIn} alt="Icone do LinkedIn"/></a>
                 </div>
             </div>
         </div>
@@ -95,23 +100,35 @@ export const HomePage = () => {
             <h1>Habilidades</h1>
             <div className="tools">
                 <div className="react">
-                    <CardsSkill img={ReactIcon} text="React JS: 5 meses de experiência"/>
+                    <CardsSkill img={ReactIcon} text="React JS: Mais de 5 meses de experiência"/>
                 </div>
                 <div className="css">
-                    <CardsSkill img={CssIcon} text="CSS: 12 meses de experiência"/>
+                    <CardsSkill img={CssIcon} text="CSS: Mais de 12 meses de experiência"/>
                 </div>
                 <div className="js">
-                    <CardsSkill img={JsIcon} text="JavaScript: 5 meses de experiência"/>
+                    <CardsSkill img={JsIcon} text="JavaScript: Mais de 5 meses de experiência"/>
+                </div>
+                <div className="tailwindcss">
+                    <CardsSkill img={tailwindcss} text="TailwindCSS: Mais de 10 meses de experiência"/>
+                </div>
+                <div className="js">
+                    <CardsSkill img={figma} text="Figma: Mais de 11 meses de experiência"/>
                 </div>
             </div>
         </div>
 
         <div className="section4" id="section04">
             <h1>Projetos</h1>
-            <div className="projetos-carousel ">
-                
+            <div className="projetos">
+                <div className="elbus">
+                    <a target="_blank" rel="noreferrer noopener" href="https://elbus.vercel.app/"><img src={elbus} alt="Projeto de transporte público" /></a>
+                </div>
+                <div className="emBreve">
+                    <a href=""><img src={emBreve} alt="Projeto de transporte público" /></a>
+                </div>
             </div>
         </div>
     </div>
   )
 }
+
