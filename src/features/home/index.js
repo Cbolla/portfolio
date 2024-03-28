@@ -9,7 +9,11 @@ import CssIcon from "../../assets/img/css-icon.svg"
 import ReactIcon from "../../assets/img/react-icon.svg"
 import tailwindcss from "../../assets/img/tailwindcss.png"
 import figma from "../../assets/img/figma.png"
+import MetaAds from "../../assets/img/metaads.png"
+import wordpress from "../../assets/img/wordpress.png"
+import gitbash from "../../assets/img/gitbash.png"
 import elbus from "../../assets/img/elbus.png"
+import artesanato from "../../assets/img/artesanato.png"
 import emBreve from "../../assets/img/emBreve.png"
 
 import Carousel from "nuka-carousel"
@@ -67,7 +71,7 @@ export const HomePage = () => {
                           )}>
                             
                             <a target="_blank" rel="noreferrer noopener" href="https://github.com/cbolla"><img src={GitHub} alt="Icone do GitHub" /></a>
-                            <a target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/in/williamfa/"><img src={LinkedIn} alt="Icone do LinkedIn"/></a>
+                            <a target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/in/williamfabiano/"><img src={LinkedIn} alt="Icone do LinkedIn"/></a>
                         </Carousel>
                     </div>
                 </div> 
@@ -100,19 +104,28 @@ export const HomePage = () => {
             <h1>Habilidades</h1>
             <div className="tools">
                 <div className="react">
-                    <CardsSkill img={ReactIcon} text="React JS: Mais de 5 meses de experiência"/>
+                    <CardsSkill img={ReactIcon} text="React JS: Mais de 1 ano de experiência"/>
                 </div>
                 <div className="css">
-                    <CardsSkill img={CssIcon} text="CSS: Mais de 12 meses de experiência"/>
+                    <CardsSkill img={CssIcon} text="CSS: Mais de 3 anos de experiência"/>
                 </div>
                 <div className="js">
-                    <CardsSkill img={JsIcon} text="JavaScript: Mais de 5 meses de experiência"/>
+                    <CardsSkill img={JsIcon} text="JavaScript: Mais de 2 anos de experiência"/>
                 </div>
                 <div className="tailwindcss">
-                    <CardsSkill img={tailwindcss} text="TailwindCSS: Mais de 10 meses de experiência"/>
+                    <CardsSkill img={tailwindcss} text="TailwindCSS: Mais de 1 ano de experiência"/>
                 </div>
                 <div className="js">
-                    <CardsSkill img={figma} text="Figma: Mais de 11 meses de experiência"/>
+                    <CardsSkill img={figma} text="Figma: Mais de 2 anos de experiência"/>
+                </div>
+                <div className="wodpress">
+                    <CardsSkill img={wordpress} text="WordPress: Mais de 3 anos de experiência"/>
+                </div>
+                <div className="Meta Ads">
+                    <CardsSkill img={MetaAds} text="Meta Ads: Mais de 1 ano de experiência"/>
+                </div>
+                <div className="git">
+                    <CardsSkill img={gitbash} text="Git e Git Hub: Mais de 3 anos de experiência"/>
                 </div>
             </div>
         </div>
@@ -122,6 +135,9 @@ export const HomePage = () => {
             <div className="projetos">
                 <div className="elbus">
                     <a target="_blank" rel="noreferrer noopener" href="https://elbus.vercel.app/"><img src={elbus} alt="Projeto de transporte público" /></a>
+                </div>
+                <div className="elbus">
+                    <a target="_blank" rel="noreferrer noopener" href="https://forestgreen-lyrebird-755778.hostingersite.com/"><img src={artesanato} alt="Projeto de transporte público" /></a>
                 </div>
                 <div className="emBreve">
                     <a href=""><img src={emBreve} alt="Projeto de transporte público" /></a>
