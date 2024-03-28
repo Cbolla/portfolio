@@ -13,6 +13,7 @@ import MetaAds from "../../assets/img/metaads.png"
 import wordpress from "../../assets/img/wordpress.png"
 import gitbash from "../../assets/img/gitbash.png"
 import elbus from "../../assets/img/elbus.png"
+import magica from "../../assets/img/magica.png"
 import artesanato from "../../assets/img/artesanato.png"
 import emBreve from "../../assets/img/emBreve.png"
 
@@ -138,6 +139,9 @@ export const HomePage = () => {
                 </div>
                 <div className="elbus">
                     <a target="_blank" rel="noreferrer noopener" href="https://forestgreen-lyrebird-755778.hostingersite.com/"><img src={artesanato} alt="Projeto de transporte público" /></a>
+                </div>
+                <div className="elbus">
+                    <a target="_blank" rel="noreferrer noopener" href="https://cbollamagica-6j2mhfb83-cbolla.vercel.app/"><img src={magica} alt="Projeto de transporte público" /></a>
                 </div>
                 <div className="emBreve">
                     <a href=""><img src={emBreve} alt="Projeto de transporte público" /></a>

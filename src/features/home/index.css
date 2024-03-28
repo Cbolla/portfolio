@@ -316,7 +316,7 @@ label span:nth-child(3){
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 400px;
+    margin-top: 500px;
 
 }
 
@@ -374,7 +374,7 @@ label span:nth-child(3){
         margin-top: 50px;
     }
     .section4{
-        margin-top: 500px;
+        margin-top: 600px;
     }
     .section4 h1{
         margin-bottom: 100px;
@@ -390,7 +390,7 @@ label span:nth-child(3){
 @media (max-width: 851px){
 
     .section1 .section-left .circle{
-        margin-top: 40px;
+        margin-top: 50px;
         margin-left: 60%;
         width: 0px;
         background-color: #5e84e3;
@@ -421,7 +421,7 @@ label span:nth-child(3){
         flex-direction: column;
     }
     .section4{
-        margin-top: 500px;
+        margin-top: 700px;
     }
     .section4 h1{
         margin-bottom: 200px;
@@ -431,6 +431,8 @@ label span:nth-child(3){
     }
 
 }
+
+
 
 @media (max-width: 622px){
 
@@ -487,6 +489,9 @@ label span:nth-child(3){
     }
     .section3 .tools{
         justify-content: start;
+    }
+    .section4{
+        margin-top: 700px;
     }
 }
 
